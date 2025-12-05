@@ -1292,7 +1292,7 @@ Fully managed, scalable service for ADK agents on Google Cloud.
     
     # Deploy
     remote_app = agent_engines.create(
-        app_for_engine,
+        agent_engine=app_for_engine,
         requirements=["google-cloud-aiplatform[adk,agent_engines]"],
         display_name="My Production Agent"
     )
